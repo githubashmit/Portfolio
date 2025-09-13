@@ -9,13 +9,9 @@ function myMenuFunction() {
   }
 }
 
-
-
-
-
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
-  strings: ["Designer", "Coder","Developer"],
+  strings: ["Designer", "Coder", "Developer"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
@@ -23,11 +19,11 @@ var typingEffect = new Typed(".typedText", {
 });
 
 const body = document.querySelector("body"),
-toggleSwitch = document.getElementById("toggle-switch");
+  toggleSwitch = document.getElementById("toggle-switch");
 
 toggleSwitch.addEventListener("click", () => {
-    body.classList.toggle("dark");
-})
+  body.classList.toggle("dark");
+});
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
 const sr = ScrollReveal({
@@ -76,7 +72,6 @@ srRight.reveal(".skill", { delay: 100 });
 srRight.reveal(".skill-box", { delay: 100 });
 
 /* ----- CHANGE ACTIVE LINK ----- */
-
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -100,3 +95,5 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+
